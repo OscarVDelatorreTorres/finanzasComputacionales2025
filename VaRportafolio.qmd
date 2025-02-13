@@ -1,0 +1,17 @@
+---
+title: "RiesgoPortafoliRentaFija"
+format: html
+editor: visual
+---
+
+# Ejercicio de cuantificación de riesgo de mercado
+
+#Se cargan los datos de entrada:
+```{r}
+library(openxlsx)
+library(lubridate)
+# Se carga la posición del portafolio:
+posicion=read.xlsx("datosPortafolio.xlsx",sheet="posicion")
+posicion$Fecha.vencimiento=as.Date(posicion$Fecha.vencimiento,origin="1899-12-30")
+```
+
