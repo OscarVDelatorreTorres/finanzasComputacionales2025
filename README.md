@@ -1,0 +1,2 @@
+# finanzasComputacionales2025
+Finanzas computacionales
